@@ -21,6 +21,6 @@ int main(){
         }
         
     }
-    cout<<sum<<endl;
+    cout<<"the sum is"<<sum<<endl;
     return 0;
 }
