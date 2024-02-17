@@ -2,9 +2,8 @@
 Roll Number: 102215255
 Name: Diya Goyal
 Description: For a given array, write functions to perform the following:
-
 v. Finding a pair of elements with sum k
-
+Acknowledgement: NA
 */
 #include<iostream>
 using namespace std;
@@ -18,7 +17,6 @@ void pair_sum(int arr[],int size,int k){
 		}
 	}
 }
-
 int main(){
 	int arr[]={1,5,7,-1,5};
 	int size=5;

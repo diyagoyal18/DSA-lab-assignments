@@ -2,8 +2,8 @@
 Roll Number: 102215255
 Name: Diya Goyal
 Description: For a given array, write functions to perform the following:
-
 i. Finding single element in an array
+Acknowledgement: NA
 */
 #include<iostream>
 using namespace std;

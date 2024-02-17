@@ -5,11 +5,10 @@ Description: If a one dimensional integer type array with its size and length gi
 language to create functions to perform the following operations (Please assume whatever
 is necessary to examplify the results) :
 x. Min()
+Acknowledgement: NA
 */
 #include<iostream>
 using namespace std;
-
-
 int Min(int arr[],int size){
 	int min=arr[0];
 
@@ -20,7 +19,6 @@ int Min(int arr[],int size){
 	}
 	return min;
 }
-
 int main(){
 	int arr[]={1,2,3,4,5,6,7,4,-1};
 	int size=9;

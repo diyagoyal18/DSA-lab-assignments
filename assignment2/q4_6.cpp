@@ -2,31 +2,23 @@
 Roll Number: 102215255
 Name: Diya Goyal
 Description:For a given Linked List (LL), write programs to perform the following functions
-
 vi. Merge 2 LLs
-
+Acknlowledgement:NA
 */
 #include <bits/stdc++.h> 
 using namespace std; 
-  
-
 class Node  
 {  
     public: 
         int data;  
         Node *next;  
 };  
-
 void insert(Node **, int);  
 void Print(Node *);      
-void merge(Node *, Node **);  
-  
- 
+void merge(Node *, Node **);   
 int main()  
 {  
     Node *first = NULL, *second = NULL;
-
- 
     insert(&first, 5);  
     insert(&first, 4);  
     insert(&first, 3); 
@@ -34,8 +26,6 @@ int main()
     insert(&first, 1);  
     cout<<"First Linked List:\n";  
     Print(first);  
-  
-   
     insert(&second, 10);  
     insert(&second, 9);  
     insert(&second, 8);  
@@ -43,17 +33,11 @@ int main()
     insert(&second, 6);  
     cout<<"\nSecond Linked List:\n";  
     Print(second);  
-  
     merge(first, &second);  
-  
-  
     cout<<"\nMerged list is: ";  
-    Print(first);  
-  
+    Print(first);   
     return 0;  
 }  
-
-
 void insert(Node ** head_ref, int new_data)  
 {  
     Node* new_node = new Node(); 
@@ -61,8 +45,6 @@ void insert(Node ** head_ref, int new_data)
     new_node->next = (*head_ref);  
     (*head_ref) = new_node;  
 }  
-  
- 
 void Print(Node *head)  
 {  
     Node *temp = head;  
@@ -73,17 +55,12 @@ void Print(Node *head)
     }  
     cout<<endl; 
 }  
-  
- 
 void merge(Node *first, Node **second)  
 {  
     Node *firstRef = first;  
-  
-  
     while (firstRef->next != NULL)  
     {  
          firstRef = firstRef->next;
     }  
-   
     firstRef->next = *second;
 }
