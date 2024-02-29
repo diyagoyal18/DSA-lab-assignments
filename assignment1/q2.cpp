@@ -1,3 +1,5 @@
+//Write a program to find sum of all elements of an array; write a program to find maximum of elements of an array; write a program for linear search of an array.
+
 #include<iostream>
 using namespace std;
 

@@ -1,6 +1,4 @@
  //Q5. 	Write a program for Linear Search using Functions.
-
-
  #include<iostream>
  using namespace std;
  
