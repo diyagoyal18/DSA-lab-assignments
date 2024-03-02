@@ -21,7 +21,7 @@ int main(){
             ++count;
         }
     }
-    int words=0;
+    int words=1;
     for (int i = 0; i < strlen(s); i++)
     {
         if(s[i]==' ' ){
