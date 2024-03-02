@@ -5,33 +5,37 @@ Description:Write a function to perform following operations on the string:
 (Note: You can make single function for all operations/independent function for each
 problem)
 Validating a string (Note: Valid string does contain only alphabets)
-Acknowledgement: NA;
+Acknowledgement: took help from friends;
 */
-#include<bits/stdc++.h>
+
 #include<iostream>
 using namespace std;
-bool valid(char *s){
-    for (int i = 0; s[i]!='\0'; i++)
-    {
-        if(s[i]>=65 && s[i]<=91 || s[i]>=97 && s[i]<=123 ){
-            return true;
-        }
-        else{
-            return false;
-        }
-    }
+
+int validstring(char str[]){
+	int i=0;
+	int flag=-1;
+	while(str[i]!='\0'){
+		if(int(str[i])>=65 && int(str[i])<=90 || int(str[i])>=97 && int(str[i])<=122){
+			flag=0;
+		}
+		else{
+			flag=-1;
+			break;
+		}
+		i++;
+
+	}
+
+	return flag;
+
 }
+
 int main(){
-    char s[20];
-    cin>>s;
-    
-    if(valid){
-        cout<<"its a valid string"<<endl;
-    }
-    else{
-        cout<<"its not a valid string"<<endl;
-    }
-    
-    
-    return 0;
+	char str[100]="tanish";
+	if(validstring(str)==0){
+		cout<<"valid string";
+	}
+	else{
+		cout<<"invalid string"<<endl;
+	}
 }
