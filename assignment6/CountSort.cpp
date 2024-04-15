@@ -11,7 +11,6 @@ using namespace std;
 
 vector<int> countSort(vector<int>& inputArray)
 {
-
 	int N = inputArray.size();
 
 	int M = 0;
